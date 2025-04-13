@@ -1,9 +1,10 @@
 
 import React, { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import PropsNav from './components/PropsNav';
 import State from './components/State';
+import Form from './components/form';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -28,6 +29,7 @@ const App = () => {
       <button className='bg-green-500 text-slate-900 py-1.5 px-3 rounded-lg cursor-pointer hover:bg-green-600' onClick={() => { setRandi(!randi) }}>CLick me</button>
       {randi && data2}
       <State />
+      <Form heading='This is form'/>
     </div>
   )
 }
