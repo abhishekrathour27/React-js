@@ -29,7 +29,7 @@ const App = () => {
       <button className='bg-green-500 text-slate-900 py-1.5 px-3 rounded-lg cursor-pointer hover:bg-green-600' onClick={() => { setRandi(!randi) }}>CLick me</button>
       {randi && data2}
       <State />
-      <Form heading='This is form'/>
+      <Form heading='This is form where a button use to convert text into upper case'/>
     </div>
   )
 }
