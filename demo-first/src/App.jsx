@@ -13,7 +13,7 @@ const App = () => {
     <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique quaerat beatae aspernatur molestias natus facilis, velit qui libero nobis provident, tenetur quis? Quasi, dignissimos minima ab facilis harum alias tempore!</h1>
   </div>
   return (
-    <div className='text-green-500 bg-slate-900 h-screen'>
+    <div className='text-green-500 bg-slate-900 h-fit py-5'>
       {/* <Navbar/> */}
       <PropsNav title='NewHome' aboutText='AboutUs' />
       <div className='bg-green flex gap-4 p-4 items-center'>
