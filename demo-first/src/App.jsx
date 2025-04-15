@@ -5,6 +5,7 @@ import './App.css'
 import PropsNav from './components/PropsNav';
 import State from './components/State';
 import Form from './components/form';
+import Know from './components/know';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -30,6 +31,7 @@ const App = () => {
       {randi && data2}
       <State />
       <Form heading='This is form where a button use to convert text into upper case'/>
+      <Know/>
     </div>
   )
 }
