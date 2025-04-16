@@ -13,6 +13,9 @@ export default function Form(props) {
     let newText = text.toLowerCase();
     setText(newText);
   }
+  const handleClear = () =>{
+    setText('')
+  }
   const [text, setText] = useState('')
 
   return (
@@ -27,6 +30,8 @@ export default function Form(props) {
           onClick={handleOnClick}  >upperCase</button>
         <button className='bg-green-500 w-fit mx-5 text-slate-900 py-1.5 px-3 rounded-lg cursor-pointer hover:bg-green-600'
           onClick={handleLowClick}  >lowerCase</button>
+        <button className='bg-green-500 w-fit mx-3 text-slate-900 py-1.5 px-3 rounded-lg cursor-pointer hover:bg-green-600'
+          onClick={handleClear} >Clear</button>
         <div className="cont">
           <h1 className='text-4xl'>Your Text Summary</h1>
           <p> {text.split(' ').length-1} words and {text.length} characters</p>

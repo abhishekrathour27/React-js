@@ -6,6 +6,9 @@ import PropsNav from './components/PropsNav';
 import State from './components/State';
 import Form from './components/form';
 import Know from './components/know';
+import DarkMode from './components/DarkMode';
+
+
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -14,7 +17,7 @@ const App = () => {
     <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique quaerat beatae aspernatur molestias natus facilis, velit qui libero nobis provident, tenetur quis? Quasi, dignissimos minima ab facilis harum alias tempore!</h1>
   </div>
   return (
-    <div className='text-green-500 bg-slate-900 h-fit py-5'>
+    <div className=' h-fit pb-5' style={mode} >
       {/* <Navbar/> */}
       <PropsNav title='NewHome' aboutText='AboutUs' />
       <div className='bg-green flex gap-4 p-4 items-center'>
@@ -32,6 +35,7 @@ const App = () => {
       <State />
       <Form heading='This is form where a button use to convert text into upper case'/>
       <Know/>
+      <DarkMode/>
     </div>
   )
 }

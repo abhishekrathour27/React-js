@@ -5,7 +5,7 @@ import React from "react";
 export default function PropsNav(props) {
   return (
     <div>
-      <nav className="flex items-center justify-around">
+      <nav className="flex items-center justify-around text-green-500 bg-slate-900  border-b-2">
         <ul className="flex gap-8 pl-3 h-15 items-center w-1/2 cursor-pointer">
           <li>{props.title}</li>
           <li>{props.aboutText}</li>
