@@ -21,6 +21,8 @@ export default function PropsNav(props) {
           <button className="bg-green-500 text-slate-900 py-1.5 px-3 rounded-lg cursor-pointer hover:bg-green-600">
             Search
           </button>
+          <button className='bg-green-500 text-slate-900 px-4 py-2 rounded hover:bg-green-600 transition'
+            onClick={props.toggleMode}>{props.btnText}</button>
         </div>
       </nav>
     </div>

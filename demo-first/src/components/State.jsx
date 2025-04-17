@@ -30,7 +30,7 @@ export default function Practice() {
     return (
         //This is simple method -->
         // <div className=" p-6">
-        //   <div className="flex gap-4 mb-10">
+        //   <div className="flex gap-4 mb-10 ">
         //     <button
         //       className="bg-green-500 text-slate-900 py-1.5 px-3 rounded-lg cursor-pointer hover:bg-green-600"
         //       onClick={() => {
