@@ -5,12 +5,12 @@ export default function Practice() {
     //   const [about, setAbout] = useState(false);
 
     const homeSec = () => {
-        return (<div className=" text-white p-4 rounded border ">
+        return (<div className=" text-white p-4 rounded  ">
             This is the Home section.
         </div>)
     }
     const aboutSec = () => {
-        return (<div className="bg-purple-500 text-white p-4 rounded">
+        return (<div className=" text-white p-4 rounded">
             This is the About section.
         </div>)
     }
