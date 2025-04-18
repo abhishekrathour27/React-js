@@ -4,7 +4,7 @@ import './App.css'
 // import Navbar from './components/Navbar'
 import PropsNav from './components/PropsNav';
 import State from './components/State';
-import Form from './components/Form';
+import Form from './components/form';
 import Know from './components/Know';
 import ChildrenProps from './components/ChildrenProps';
 import Button from './components/Button';
@@ -70,6 +70,7 @@ const App = () => {
       <ChildrenProps name='children'>
         <h1>This is ChildrenProps</h1>
         <p>This is React File </p>
+        <p>Currently i am learning React-js</p>
       </ChildrenProps>
       <Button handleCount={handleCount} count={increment}>
         Click me
