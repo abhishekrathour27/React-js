@@ -70,6 +70,7 @@ const App = () => {
       <ChildrenProps name='children'>
         <h1>This is ChildrenProps</h1>
         <p>Currently i am learning React-js</p>
+        <p>This is React file</p>
       </ChildrenProps>
       <Button handleCount={handleCount} count={increment}>
         Click me
