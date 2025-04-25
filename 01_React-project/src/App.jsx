@@ -15,7 +15,6 @@ function App() {
   }
 
   const setColor = ()=>{
-    
     document.body.style.backgroundColor = randomColor();
   }
 

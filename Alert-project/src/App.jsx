@@ -1,23 +1,28 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
+import About from './components/About'
+import Home from './components/Home'
+import ArrObjInState from './components/ArrObjInState'
+// import {BrowserRouter} from "react-router-dom"
 
 function App() {
-  const [mode, setMode] = useState({
-    backgroundColor : 'white',
-    color : 'black'
-  })
 
-  const [show , setShow] = useState(false)
+  const [show, setShow] = useState(false)
 
-  const showMenu = ()=>{
+  const showMenu = () => {
     setShow(!show)
   }
 
   return (
-   <div style={mode} >
-     <Navbar showMenu={showMenu} show={show} setShow={setShow}/>
-   </div>
+    
+      <div >
+        <Navbar showMenu={showMenu} show={show} setShow={setShow} />
+        {/* <Home /> */}
+        {/* <About/> */}
+        <ArrObjInState/>
+      </div>
+   
   )
 }
 

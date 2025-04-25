@@ -20,7 +20,6 @@ export default function Navbar({ showMenu, show , setShow }) {
           <li className='cursor-pointer'>Contact</li>
           <li className='cursor-pointer'>Help</li>
         </ul>
-        <button className='bg-blue-600 h-fit text-white px-3 py-1.5 rounded-xl cursor-pointer hover:bg-blue-700 hidden md:flex'>DarkMode</button>
       </div>
 
       {show && (
