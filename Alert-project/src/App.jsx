@@ -1,28 +1,44 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Home from './components/Home'
 import ArrObjInState from './components/ArrObjInState'
-// import {BrowserRouter} from "react-router-dom"
+import { createBrowserRouter , RouterProvider } from 'react-router-dom';
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <> <Navbar  /><Home /></>
+  },
+
+  {
+    path: '/About',
+    element: <> <Navbar  /><About /></>
+  },
+  {
+    path: '/Contact',
+    element: <> <Navbar /><ArrObjInState /></>
+  }
+
+])
+
+
 
 function App() {
 
-  const [show, setShow] = useState(false)
-
-  const showMenu = () => {
-    setShow(!show)
-  }
+  
 
   return (
+
+    <div >
+      {/* <Navbar showMenu={showMenu} show={show} setShow={setShow} /> */}
+      <RouterProvider router={router}/>
     
-      <div >
-        <Navbar showMenu={showMenu} show={show} setShow={setShow} />
-        {/* <Home /> */}
-        {/* <About/> */}
-        <ArrObjInState/>
-      </div>
-   
+
+    </div>
+
   )
 }
 
