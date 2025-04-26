@@ -1,7 +1,7 @@
 import React from 'react'
 import { AlignJustify, X } from 'lucide-react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -11,7 +11,7 @@ export default function Navbar() {
   const showMenu = () => {
     setShow(!show)
   }
-
+  const navigate = useNavigate()
   return (
     <div className='flex justify-around w-full h-14 items-center bg-blue-200 text-blue-600'>
       <div className='space-x-1'>
@@ -21,9 +21,9 @@ export default function Navbar() {
       <div className='flex gap-4 items-center'>
         <AlignJustify color="#3d11df" className='flex cursor-pointer md:hidden' onClick={showMenu} />
         <ul className='hidden md:flex  gap-5'>
-          <Link to='/'><li className='cursor-pointer'>Home</li></Link>
-          <Link to='/About'><li className='cursor-pointer'>About</li></Link>
-          <Link to='/Contact'><li className='cursor-pointer'>Contact</li></Link>
+          <li className='cursor-pointer' onClick={() => navigate('/')}>Home</li>
+          <li className='cursor-pointer' onClick={() => navigate('/about')}>About</li>
+          <li className='cursor-pointer' onClick={() => navigate('/contact')}>Contact</li>
           <li className='cursor-pointer'>Help</li>
         </ul>
       </div>
@@ -31,9 +31,9 @@ export default function Navbar() {
       {show && (
         <div className='md:hidden fixed top-0  right-0 h-screen w-1/2 bg-white shadow-lg p-5 z-50'>
           <ul className='space-y-4 relative text-blue-600'>
-            <Link to='/'><li className='cursor-pointer' onClick={() => setShow(false)}>Home</li></Link>
-            <Link to='/About'><li className='cursor-pointer'onClick={() => setShow(false)}>About</li></Link>
-            <Link to='/Contact'><li className='cursor-pointer' onClick={() => setShow(false)}>Contact</li></Link>
+            <li className='cursor-pointer' onClick={() => navigate('/')}>Home</li>
+            <li className='cursor-pointer' onClick={() => navigate('/about')}>About</li>
+            <li className='cursor-pointer' onClick={() => navigate('/contact')}>Contact</li>
             <li className='cursor-pointer'>Help</li>
             <X className='absolute right-2 top-0 border p-1 cursor-pointer' onClick={() => setShow(false)} />
 
