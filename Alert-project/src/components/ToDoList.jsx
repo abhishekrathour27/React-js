@@ -25,7 +25,7 @@ export default function ToDoList() {
       <ol className=' text-center mt-2  text-2xl font-semibold  '>
         {list.map((item, index) => (<div className='flex justify-between '>
           <li key={index} className='border bg-blue-500 text-white rounded-lg px-5'>
-            {item} </li> <Delete onClick={()=> ToggleDelete(index)} />
+            {item} </li> <Delete onClick={() => ToggleDelete(index)} />
         </div>))}
 
       </ol>

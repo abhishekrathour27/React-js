@@ -17,7 +17,7 @@ export default function ArrObjInState() {
         }
 
         setCars([...cars, newCars])
-        setYear('2023');
+        setYear('2020');
         setName('')
         setModel('')
 
