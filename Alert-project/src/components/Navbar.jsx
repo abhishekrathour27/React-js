@@ -30,7 +30,7 @@ export default function Navbar() {
 
       {show && (
         <div className='md:hidden fixed top-0  right-0 h-screen w-1/2 bg-white shadow-lg p-5 z-50'>
-          <ul className='space-y-4 relative text-blue-600'>
+          <ul className='space-y-4 relative text-blue-600 ' onClick={() => setShow(false)}>
             <li className='cursor-pointer' onClick={() => navigate('/')}>Home</li>
             <li className='cursor-pointer' onClick={() => navigate('/about')}>About</li>
             <li className='cursor-pointer' onClick={() => navigate('/contact')}>Contact</li>
